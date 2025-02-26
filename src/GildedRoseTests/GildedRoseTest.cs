@@ -7,7 +7,7 @@ namespace GildedRoseTests
     public class GildedRoseTest
     {
         [Fact]
-        public void Foo()
+        public void UpdateQuality_DoesNotChangeItemName()
         {
             // Arrange
             var items = new List<Item> { new() { Name = "foo", SellIn = 0, Quality = 0 } };
