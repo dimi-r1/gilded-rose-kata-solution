@@ -8,7 +8,7 @@ namespace GildedRoseTests;
 public class ConjuredItemTests
 {
     [Fact]
-    public void ConjuredItems_DegradeTwiceAsFast() // TODO: Fails as we need to update the UpdateQuality() method.
+    public void ConjuredItems_DegradeTwiceAsFast()
     {
         // Arrange
         var items = new List<Item> { new() { Name = ItemNames.ConjuredManaCake, SellIn = 5, Quality = 10 } };
@@ -22,7 +22,7 @@ public class ConjuredItemTests
     }
 
     [Fact]
-    public void ConjuredItems_WithExpiredSellIn_DegradeTwiceAsFast() // TODO: Fails as we need to update the UpdateQuality() method.
+    public void ConjuredItems_WithExpiredSellIn_DegradeTwiceAsFast()
     {
         // Arrange
         var items = new List<Item> { new() { Name = ItemNames.ConjuredManaCake, SellIn = 0, Quality = 10 } };
@@ -50,7 +50,7 @@ public class ConjuredItemTests
     }
 
     [Fact]
-    public void GenericConjuredItems_DegradeTwiceAsFast() // TODO: Fails as we need to update the UpdateQuality() method.
+    public void GenericConjuredItems_DegradeTwiceAsFast()
     {
         // Arrange
         var items = new List<Item> { new() { Name = "Conjured Health Potion", SellIn = 5, Quality = 10 } };
@@ -64,7 +64,7 @@ public class ConjuredItemTests
     }
 
     [Fact]
-    public void ConjuredPrefixDetection_IsCaseInsensitive() // TODO: Fails as we need to update the UpdateQuality() method.
+    public void ConjuredPrefixDetection_IsCaseInsensitive()
     {
         // Arrange
         var items = new List<Item> { new() { Name = "conjured Cheese Salad", SellIn = 5, Quality = 10 } };
