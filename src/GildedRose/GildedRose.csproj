@@ -6,4 +6,9 @@
     <StartupObject>GildedRoseKata.Program</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Planning\" />
+    <Folder Include="Strategies\Implementations\" />
+  </ItemGroup>
+
 </Project>
