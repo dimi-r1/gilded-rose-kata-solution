@@ -18,20 +18,21 @@ public abstract class BaseItemUpdateStrategy : IItemUpdateStrategy
         item.SellIn -= Constants.SellIn.DefaultDecrease;
     }
 
-    protected void IncreaseQuality(Item item)
+    protected static void IncreaseQuality(Item item)
     {
         if (item.Quality < Constants.Quality.MaxQuality)
+        {
             item.Quality += Constants.Quality.DefaultIncrease;
+        }
     }
 
-    protected void DecreaseQuality(Item item)
+    protected static void DecreaseQuality(Item item)
     {
         if (item.Quality > Constants.Quality.MinQuality)
+        {
             item.Quality -= Constants.Quality.DefaultDecrease;
+        }
     }
 
-    protected bool IsExpired(Item item)
-    {
-        return item.SellIn < Constants.SellIn.Expired;
-    }
+    protected static bool IsExpired(Item item) => item.SellIn < Constants.SellIn.Expired;
 }

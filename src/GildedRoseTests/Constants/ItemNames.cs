@@ -18,4 +18,5 @@ public static class ItemNames
 
     // Double degradation items
     public const string ConjuredManaCake = "Conjured Mana Cake";
+    public const string AlternativeConjuredItem = "Conjured Health Potion";
 }
