@@ -27,10 +27,9 @@ public class ThresholdBasedStrategy : BaseItemUpdateStrategy
 
     protected override void UpdateQualityAfterExpiration(Item item)
     {
-        if (IsExpired(item))
-        {
-            // Quality drops to zero after the expiration.
-            item.Quality = Constants.Quality.MinQuality;
-        }
+        if (!IsExpired(item)) return;
+        
+        // Quality drops to zero after the expiration.
+        item.Quality = Constants.Quality.MinQuality;
     }
 }

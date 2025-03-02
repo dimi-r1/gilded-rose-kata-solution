@@ -14,9 +14,7 @@ public class QualityIncreasingStrategy : BaseItemUpdateStrategy
 
     protected override void UpdateQualityAfterExpiration(Item item)
     {
-        if (IsExpired(item))
-        {
-            IncreaseQuality(item);
-        }
+        if (!IsExpired(item)) return;
+        IncreaseQuality(item);
     }
 }
