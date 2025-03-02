@@ -24,10 +24,10 @@ public class DoubleDegradationStrategy : BaseItemUpdateStrategy
         switch (item.Quality)
         {
             case > 1:
-                item.Quality -= 2;
+                item.Quality -= Constants.Quality.DoubleDecrease;
                 break;
             case > 0:
-                item.Quality = 0;
+                item.Quality = Constants.Quality.MinQuality;
                 break;
         }
     }

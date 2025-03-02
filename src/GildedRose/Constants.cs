@@ -23,6 +23,7 @@ public static class Constants
         public const int MaxQuality = 50;
         public const int DefaultDecrease = 1;
         public const int DefaultIncrease = 1;
+        public const int DoubleDecrease = 2;
     }
     
     public static class SellIn
