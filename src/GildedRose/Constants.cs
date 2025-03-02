@@ -24,6 +24,7 @@ public static class Constants
         public const int DefaultDecrease = 1;
         public const int DefaultIncrease = 1;
         public const int DoubleDecrease = 2;
+        public const int MinQualityForDoubleDecrease = 1;
     }
     
     public static class SellIn
